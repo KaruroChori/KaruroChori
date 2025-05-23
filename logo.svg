@@ -1,0 +1,63 @@
+<!--LLMs are very bad at generating SVG right now, I will have to do it myself-->
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Define a star shape in a symbol for re-use -->
+    <defs>
+      <symbol id="star" viewBox="0 0 100 100">
+        <!-- Star drawn with a polygon -->
+        <polygon points="50,5 61,39 98,39 68,59 79,93 50,72 21,93 32,59 2,39 39,39"
+                 fill="black" stroke="white" stroke-width="3"/>
+      </symbol>
+      
+      <!-- Breathing animation -->
+      <style type="text/css"><![CDATA[
+        .breathe {
+          transform-origin: center;
+          animation: breathe 3s infinite ease-in-out;
+        }
+        @keyframes breathe {
+          0%   { transform: scale(1); }
+          50%  { transform: scale(1.1); }
+          100% { transform: scale(1); }
+        }
+      ]]></style>
+    </defs>
+  
+    <!-- Transparent Background -->
+    <rect x="0" y="0" width="800" height="200" fill="none"/>
+  
+    <!-- Placing stars with varied positions and scales -->
+    <g class="breathe">
+      <use href="#star" transform="translate(80,40) scale(0.5)"/>
+    </g>
+    <g class="breathe">
+      <use href="#star" transform="translate(220,20) scale(0.7)" />
+    </g>
+    <g class="breathe">
+      <use href="#star" transform="translate(360,50) scale(0.6)"/>
+    </g>
+    <g class="breathe">
+      <use href="#star" transform="translate(520,30) scale(0.8)"/>
+    </g>
+    <g class="breathe">
+      <use href="#star" transform="translate(680,60) scale(0.6)"/>
+    </g>
+    <g class="breathe">
+      <use href="#star" transform="translate(140,150) scale(0.5)"/>
+    </g>
+    <g class="breathe">
+      <use href="#star" transform="translate(300,130) scale(0.7)"/>
+    </g>
+    <g class="breathe">
+      <use href="#star" transform="translate(540,140) scale(0.6)"/>
+    </g>
+    <g class="breathe">
+      <use href="#star" transform="translate(700,120) scale(0.5)"/>
+    </g>
+  
+    <!-- Center text -->
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+          font-family="Arial, sans-serif" font-size="40" fill="black"
+          stroke="white" stroke-width="1">
+      Karurochari
+    </text>
+  </svg>
