@@ -1,9 +1,9 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" version="1.1">
   <!-- A circle with continuous fill animation -->
-  <circle id="myCircle" cx="200" cy="200" r="50" fill="blue" stroke="black" stroke-width="2">
+  <circle id="myCircle" cx="50" cy="50" r="20" fill="blue" stroke="black" stroke-width="2">
     
     <!-- Continuous animation for fill: cycling through blue, lightblue, and blue -->
     <animate attributeName="fill"
