@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <!-- A circle with continuous fill animation -->
+  <circle id="myCircle" cx="200" cy="200" r="50" fill="blue" stroke="black" stroke-width="2">
+    
+    <!-- Continuous animation for fill: cycling through blue, lightblue, and blue -->
+    <animate attributeName="fill"
+             values="blue; lightblue; blue"
+             dur="4s"
+             repeatCount="indefinite" />
+             
+    <!-- When mouse enters, animate radius to enlarge -->
+    <animate attributeName="r"
+             begin="mouseover"
+             from="50"
+             to="70"
+             dur="0.3s"
+             fill="freeze" />
+             
+    <!-- When mouse leaves, animate radius to shrink back -->
+    <animate attributeName="r"
+             begin="mouseout"
+             from="70"
+             to="50"
+             dur="0.3s"
+             fill="freeze" />
+  </circle>
+</svg>
